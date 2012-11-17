@@ -1,0 +1,25 @@
+﻿WaterDeep队友一个很奇葩的旅行习惯。每到一个地方，gfairyh会根据当地的地形做出一个旅游指向图，yangyiqwer则在图上记录沿途信息。在去新的地方前由liweijie总结写成旅游日志。这一次也不例外。WaterDeep旅行到一个新的大陆：费伦大陆。但是遗憾的是liweijie迷路了并跟队友失去了联系。苦恼的WaterDeep于是找到了你，希望在liweijie归队前，你能帮助他们进行撰写旅行日记。
+
+Input：
+	输入包含多组数据。
+	每组数据的第一行是5个数字:n,startx,starty,endx,endy。分别表示这个旅行区域为一个n*n的矩阵，坐标范围为(0,0)~(n-1,n-1),在(startx，starty)出发，在（endx，endy）坐标离开。
+	接下来的n行每行有n个字符，每两个字符以空格符隔开。地图里字符为ANSI表中编号为32--126的字符，每个坐标可能包含以下四个指向字符:"<",">","v","^"。分别表示从当前坐标向左,右,下,上前进直至遇到新的指向字符或者到达终点。1<=n<=2000,0<=startx,starty,endx,endy<n。
+
+Output：
+	对于每一组数据，输出一行数据，包含途中遇到的任何非指向字符。
+
+Sample Input:
+5 0 0 2 1
+v v c a <
+w m 2 1 o
+e ! > > t
+l > o 1 e
+> c o m ^
+2 1 1 1 0
+v <
+0 ^
+Sample Output:
+welcometoacm!
+0
+
+author ： liweijei
